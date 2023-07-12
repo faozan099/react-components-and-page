@@ -21,7 +21,7 @@ function LoginPage() {
               Remember me
             </label>
             <div className="d-grid mt-2">
-              <a href="/"><button className="btn btn-primary SignIn" style={{padding: "4px 88px"}}>Masuk</button></a>
+              <button className="btn btn-primary SignIn" style={{padding: "4px 88px"}}>Masuk</button>
             </div>
             <p className="pt-3">belum punya <a href="/register">Akun</a></p>
           </div>
