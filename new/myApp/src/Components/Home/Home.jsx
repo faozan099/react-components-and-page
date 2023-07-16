@@ -1,5 +1,4 @@
 import "./Home.css";
-
 function Home() {
   return (
     <section className="warna d-flex justify-content-center pt-5">

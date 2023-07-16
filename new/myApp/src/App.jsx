@@ -1,25 +1,27 @@
-import { Routes, Route } from "react-router-dom";
-import Login from "./Components/Login/Login";
-import Register from "./Components/Register/Register";
-import Home from "./Components/Home/Home";
-import Post from "./Components/Post/Post";
-import Comments from "./Components/Comments/Comments";
-import TodosList from "./Components/TodoList/TodoList";
+import { Route, Routes } from "react-router-dom";
+import PrivateRoute from "./Utils/PrivateRoutes";
+import LoginPage from "./Page/Login/LoginPage"
+import RegisterPage from "./Page/Register/RegisterPage"
+import HomePage from "./Page/Home/HomePage"
+import TodosPage from "./Page/Todos/TodosPage"
+import User from "./Page/User/User";
+import CommentsPage from "./Page/Comment/CommentsPage"
 
 function App() {
   return (
     <>
       <Routes>
         {/* public */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        
         {/* sudah login */}
-        <Route path="/home" element={<Home />} />
-        <Route path="/comments" element={<Comments />} />
-        <Route path="/post" element={<Post />} />
-        <Route path="/todo-list" element={<TodosList />} />
-
+        <Route element={<PrivateRoute />}>
+          <Route path="/home" element={<HomePage/>} />
+          <Route path="/comments" element={<CommentsPage/>} />
+          <Route path="/todos" element={<TodosPage/>} />
+          <Route path="/user" element={<User/>} />
+        </Route>
       </Routes>
     </>
   );
