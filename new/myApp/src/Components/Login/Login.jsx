@@ -18,6 +18,7 @@ function Login() {
     if (username.current.value == userData.username && password.current.value == userData.password) {
       navigate("/home");
     } else {
+      alert("kata sandi dan username salah silahkan register terlebih dahulu")
       navigate("/register");
     }
   };

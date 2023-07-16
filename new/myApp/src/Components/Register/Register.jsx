@@ -21,6 +21,7 @@ function Register() {
     e.preventDefault();
     localStorage.setItem("dataUser", JSON.stringify(formData))
     localStorage.setItem("signUp", username.current.value);
+    alert("pendaftaran berhasil silahkan masukan username dan kata sandi yang anda buat sebelumnya di halaman login")
     navigate("/");
   };
 

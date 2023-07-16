@@ -1,15 +1,15 @@
-import Comments from "../../Components/Comments/Comments"
 import Footer from "../../Components/Footer/Footer"
 import NavbarComponents from "../../Components/Navbar/Navbar"
+import Users from "../../Components/User/User"
 
-function CommentsPage() {
+function UserPage() {
   return (
     <>
     <NavbarComponents/>
-     <Comments/>
-     <Footer/> 
+    <Users/>
+    <Footer/>
     </>
   )
 }
 
-export default CommentsPage
+export default UserPage
