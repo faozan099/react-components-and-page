@@ -1,0 +1,33 @@
+Soal Front End Web Development
+
+
+Jelaskan menggunakan bahasa sendiri, apa itu:
+
+React
+component pada react
+jsx
+state
+props
+hooks
+state management
+
+selesaikan soal no 1-3, tidak boleh menggunakan built-in function (map, filter, find, dll), gunakan cara tradisional (loop, conditional, function) https://github.com/auzanassdq/latihan-logic/blob/main/01-array/1-array.md 
+
+kerjakan sebisanya dan diberi styling https://github.com/auzanassdq/latihan-logic/tree/main/React-Review 
+
+Jawaban
+- React adalah suatu library javascript yang populer dimana ketika menggunakan javascript kita sangat dipermudah ketika membuat suatu component serta menciptakan antarmuka pengguna yang intraktif dan dinamis.
+
+- Component adalah bagian bagian unit terkecil dari react yang menggambarkan tampilan UI, component dapat berupa element element sederhana components juga merupakan salah satu kelebihan dari react yang dapat melakukan eksport import dimana fitur ini sangat membantu bagi seorang pengembang.
+
+- JSX adalah syntax seperti HTML dimana sebuah HTML bisa di masukan kedalam file JS dan dapat dengan mudah memanipulasi components, JSX juga salah satu syarat untuk bisa terbaca oleh react.
+
+- State adalah suatu object data yang mempengaruhi tampilan yang terdapat di suatu components value dari state dapat diubah dengan useState yang diterapkan di dalam element components misalkan dengan dikurangi atau ditambahkan yang dikelola secara internal.
+
+- Props adalah suatu nilai yang diberikan ke components lain melalui parents ke child props tidak hanya berupa nilai bisa juga dalam bentuk pengkondisian lainnya props dapat berupa nilai boolean, string, number, dan fungsi.
+
+- Hooks adalah fitur yang cukup baru di dalam react berfungsi untuk memungkinkan menggunakan fitur react yang hanya bisa diterapkan di dalam class components namun sekarang bisa digunakan dalam functional components sehingga lebih mudah dipahami dan lebih mudah digunakan kembali.
+
+- State management adalah suatu nilai dari props biasanya state akan dikirimkan lewat parents ke child yang dapat memanipulasi dan mengubah data mestinya data akan dibutuhkan di components lain agar lebih mudah biasanya state management menggunakan redux dan context paling umum agar tidak terjadi props drilling dan diubah menjadi global.
+
+
